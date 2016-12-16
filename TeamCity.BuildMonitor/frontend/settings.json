@@ -1,42 +1,34 @@
 {
     "api": {
-        "tcUser": "teamcity",
-        "tcPassword": "teamcity247",
-        "apiEndpoint": "http://tc.proxy.local"
+        "tcUser": "tcUserName",
+        "tcPassword": "tcUserPassword",
+        "apiEndpoint": "http://tc.url.here"
     },
 
     "groups": [
     {
-        "name": "API & Client libs",
+        "name": "Group 1 Name",
         "jobs": [
             {
-                "id": "bt72",
-                "name": "User API"
+                "id": "jobId1FromTc",
+                "name": "Job 1"
             },
             {
-                "id": "NSearch_Recommendation",
-                "name": "Rec API"
-            },
-            {
-                "id": "CoreUser_E247ApiClientUser",
-                "name": "User CLIENT"
-            },
-            {
-                "id": "CoreUser_E247ApiClientRecommendation",
-                "name": "Rec CLIENT"
+                "id": "jobId2FromTc",
+                "name": "Job 2"
             }
         ]
     },
     {
-        "name": "Other services",
+        "name": "Group 2 Name",
         "jobs": [
             {
-                "id": "CoreUser_E247UserCmsDbExporter",
-                "name": "Exporter"
+                "id": "jobId3FromTc",
+                "name": "Job 3"
             },
             {
-                "id": "CoreUser_BmatIngestion",
-                "name": "BMAT Ingestion"
+                "id": "jobId4FromTc",
+                "name": "Job 4"
             }
         ]
     }
@@ -48,9 +40,9 @@
     },
 
     "ui": {
-        "showOverallStatus": false,
-        "colorJobName": true,
-        "visibleStates": ["failure", "running" ]
+        "showOverallStatus": true,
+        "colorJobName": false,
+        "visibleStates": ["failure", "running", "success" ]
     },
 
     "pollingPeriod": 10000
