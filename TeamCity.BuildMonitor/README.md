@@ -84,13 +84,3 @@ Settings of the application placed in **frontend/settings.json** file
 ```json
 "pollingPeriod": 10000
 ```
-
-# Examples
-
-* **All-in version** Show 5 branches with development and master first with and with overall status
-
-![picture](https://s28.postimg.org/nw5sj3v7h/All_In.png)
-
-* **Minimalistic version** Show only *running* and *failed* state, without overall status but colorize the job name
-
-![picture](https://s28.postimg.org/ff6a86qil/Min.png)
