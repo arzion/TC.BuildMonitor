@@ -1,0 +1,51 @@
+@import '~common/css/variables.less';
+
+.overall-status {
+  font-size: @overallFontSize;
+  color: @overallSuccess;
+  margin-bottom: 10px;
+  margin-top: -15px;
+  &.failed {
+    color: @overallFailed;
+  }
+}
+
+.branch-info {
+  text-transform: uppercase;
+  color: @branchInfoText;
+  border: 1px solid @branchBorder;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 2px;
+  min-height: 45px;
+
+  .row {
+    .status, .name {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .status {
+      width: 80px;
+      font-size: @branchStatusFontSize;
+      &.success {
+        color: @branchSuccess;
+      }
+      &.failure {
+        color: @branchFailure;
+      }
+      &.running {
+        color: @branchRunning;
+      }
+    }
+
+    .name {
+      width: 70%;
+      color: @branchName;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-transform: uppercase;
+    }
+  }
+}

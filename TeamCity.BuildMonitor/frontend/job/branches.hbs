@@ -1,0 +1,13 @@
+{{#if showOverallStatus}}
+    <div class="overall-status {{overallStatus}}">{{overallStatus}}</div>
+{{/if}}
+
+{{#each branches}}
+    <div class="branch-info">
+        <div class="row">
+            <div class="status {{status}}">{{status}}</div>
+            <div class="name">{{name}}</div>
+        </div>
+        <div class="build-info" data-branch-id="{{branchId}}"></div>
+    </div>
+{{/each}}

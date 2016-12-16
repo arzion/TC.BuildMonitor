@@ -1,0 +1,9 @@
+<div class="row {{state}}">
+    <div class="author">{{last}}</div>
+    <div class="timeAgo">{{timeAgo}}</div>
+</div>
+{{#if progress}}
+    <div class="progress-bar">
+        <div class="filled" style="width: {{progress}}%"></div>
+    </div>
+{{/if}}

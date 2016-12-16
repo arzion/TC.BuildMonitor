@@ -1,0 +1,63 @@
+@import '~common/css/variables.less';
+@import '~common/fonts/kenzo.less';
+
+body {
+  background-color: @background;
+  font-family: kenzo;
+  min-width: 420px;
+
+  .group {
+    .group-name {
+      padding-left: 10px;
+      padding-top: 15px;
+      font-size: @groupFontSize;
+      color: @groupName;
+      text-transform: uppercase;
+      vertical-align: top;
+    }
+
+    .job {
+      display: inline-block;
+      vertical-align: top;
+      padding: 10px;
+      background-color: @jobBackground;
+      width: 350px;
+      margin: 10px;
+      border: 1px solid @jobBorder;
+      border-radius: 4px;
+      &.ok {
+        .job-name {
+          color: @jobNameOk;
+        }
+      }
+      &.failed {
+        .job-name {
+          color: @jobNameFailed;
+        }
+      }
+
+      .job-name {
+        color: @jobNameDefault;
+        font-size: @jobNameFontSize;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+footer {
+  border-top: 1px solid @footerBorder;
+  color: @footer;
+  height: 35px;
+  text-align: right;
+  padding-top: 16px;
+  margin-top: 25px;
+  .last-update-container {
+    float: left;
+    .value {
+      color: @lastUpdateValue;
+      font-size: @lastUpdateFontSize;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<div class="container">
+
+    <div id="groups-container">
+        {{#each groups}}
+            <div class="group">
+                <div class="group-name">▪▪▪ {{name}} ▪▪▪</div>
+                <div class="jobs-container">
+                    {{#each jobs}}
+                        <div class="job" data-job-id="{{id}}">
+                            <div class="job-name">{{name}}</div>
+                            <div class="job-info-container"></div>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        {{/each}}
+    </div>
+
+    <footer class="footer">
+        <div class="last-update-container"></div>
+        <div>© {{year}}, VMU</div>
+    </footer>
+</div>

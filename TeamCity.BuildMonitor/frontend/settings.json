@@ -1,0 +1,57 @@
+{
+    "api": {
+        "tcUser": "teamcity",
+        "tcPassword": "teamcity247",
+        "apiEndpoint": "http://tc.proxy.local"
+    },
+
+    "groups": [
+    {
+        "name": "API & Client libs",
+        "jobs": [
+            {
+                "id": "bt72",
+                "name": "User API"
+            },
+            {
+                "id": "NSearch_Recommendation",
+                "name": "Rec API"
+            },
+            {
+                "id": "CoreUser_E247ApiClientUser",
+                "name": "User CLIENT"
+            },
+            {
+                "id": "CoreUser_E247ApiClientRecommendation",
+                "name": "Rec CLIENT"
+            }
+        ]
+    },
+    {
+        "name": "Other services",
+        "jobs": [
+            {
+                "id": "CoreUser_E247UserCmsDbExporter",
+                "name": "Exporter"
+            },
+            {
+                "id": "CoreUser_BmatIngestion",
+                "name": "BMAT Ingestion"
+            }
+        ]
+    }
+    ],
+
+    "branches": {
+        "mainBranches": ["development", "master"],
+        "count": 5
+    },
+
+    "ui": {
+        "showOverallStatus": false,
+        "colorJobName": true,
+        "visibleStates": ["failure", "running" ]
+    },
+
+    "pollingPeriod": 10000
+}

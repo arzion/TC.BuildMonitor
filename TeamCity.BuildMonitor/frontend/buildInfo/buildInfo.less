@@ -1,0 +1,28 @@
+@import '~common/css/variables.less';
+
+.build-info {
+  .changes-count, .author, .timeAgo {
+    display: inline-block;
+  }
+
+  .timeAgo {
+    float: right;
+  }
+
+  .author {
+    color: @authorName;
+    font-size: @authorFontSize;
+  }
+
+  .progress-bar {
+    height: 25px;
+    width: 100%;
+    border: 1px solid @progressBarBorder;
+    margin-top: 5px;
+
+    .filled {
+      background-color: @progressBarFilled;
+      height: 100%;
+    }
+  }
+}
