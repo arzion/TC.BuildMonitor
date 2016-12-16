@@ -16,7 +16,7 @@ npm run build
 ```
 * As result you will get the dist files places in public/dist
 * On webserver associate TeamCity build monitor web site with public/dist folder
-* TeamCity prevents CORS requests, so you have some options:
+* TeamCity prevents CORS requests, so you have next options:
   * configure TC CORS as described ([here](https://confluence.jetbrains.com/display/TCD9/REST+API#RESTAPI-CORSSupport))
   * use TC.Proxy (ASP.NET Web.API project), publish and specify TC url to it. Also configure real TC url in .config file of TC.Proxy.
   * Create your own simple proxy server.
